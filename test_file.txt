@@ -1,0 +1,2 @@
+4	I_PRP predict_VBP  I_PRP  won’t_MD  win_VB  a_DT  single_JJ  game_NN  I_PRP  bet_VBP  on_IN  ._.  !!!!_! ,_,
+0	I_PRP 'm_VBZ going_VBP to_IN predict_VB WINNER_NN OMG_UH 45_CD
