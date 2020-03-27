@@ -265,7 +265,7 @@ def buildFeatures():
     # Create the path name to the input file, assumed to be in the current directory.
     # Change this to get the filename from input parameters 
     #infile_name = os.path.join(curdir,"test_file.txt")
-
+    infile = open(sys.argv[1], "w")
 
     # Output is written to a file in the current directory (by default).
     # Change this to get the filename from input parameters 
@@ -273,8 +273,6 @@ def buildFeatures():
     #outfile = open(outfile_name,"w")
 
     outfile = open(sys.argv[2], "w")
-
-    
     # Create the dictionary of "string", "feature type" pairs, and the list of features
     feature_dict= buildFeatureDictionary()
     feature_list = buildFeatureList()

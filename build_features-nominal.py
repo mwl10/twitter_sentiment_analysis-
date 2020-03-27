@@ -88,10 +88,10 @@ def buildFeatureDictionary():
         "CC": "Coordinating conjunctions",
         "VBD":"Past_tense_verbs",
         "VBN":"Past_tense_verbs",
-        "’ll":"Future_tense_verbs",
+        "â€™ll":"Future_tense_verbs",
         "will":"Future_tense_verbs",
         "gonna":"Future_tense_verbs",
-        "won’t":"Future_tense_verbs",
+        "wonâ€™t":"Future_tense_verbs",
         ",":"Commas",
         ":":"Colon_semi-colon_ellipsis",
         "-":"Dashes",
@@ -226,8 +226,9 @@ def buildFeatureVector(tweet,feature_list,feature_dict):
 
     # Iterate over the tag_token pairs and split each pair into "tok" and "tag"
     for item in tweet.split():
-        tok = item.split('_')[0]
-        tag = item.split('_')[1]
+        index = item.rfind('_')
+        tok = item[:index]
+        tag = item[index+1:]
 
         # Do not add punctuation to the computation of average word length
         # TODO: check that this is working as assumed
