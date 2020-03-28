@@ -1,4 +1,5 @@
 import os
+import sys
 import string
 from collections import OrderedDict
 
@@ -262,7 +263,7 @@ def buildFeatures():
     
     # Create the path name to the input file, assumed to be in the current directory.
     # Change this to get the filename from input parameters 
-    infile_name = os.path.join(curdir,"test_file.txt")
+    #infile_name = os.path.join(curdir,"test_file.txt")
 
     # Output is written to a file in the current directory (by default).
     # Change this to get the filename from input parameters 
@@ -281,7 +282,7 @@ def buildFeatures():
     
     # Read each line of the input file (assumed each is one tweet) and build
     # a vector of feature counts for the tweet, then append to the output file
-    infile = open(infile_name)
+    #infile = open(infile_name)
     # infile need be changed to the first c.l. argument so
     infile = open(sys.argv[1], "r+")
 
@@ -290,4 +291,4 @@ def buildFeatures():
         writeInstance(outfile,feature_list,feature_vector)
    
 
-        
+buildFeatures()
