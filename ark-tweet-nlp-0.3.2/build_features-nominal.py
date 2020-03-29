@@ -187,6 +187,12 @@ def buildFeatureList():
         "Wh_words",
         "Modern_slang_acronyms",
         "Upper_case",
+        "Positive",     ###### added
+        "PosAff",       ###### added
+        "Pos-verbs",    ###### added
+        "Negative",     ###### added
+        "NegAff",       ###### added
+        "Neg-verbs",    ###### added
         "Average_token_length",
         "Sentiment"]
     return feature_list

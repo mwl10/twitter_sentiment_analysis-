@@ -1,0 +1,10 @@
+# .5815 <- .5815 GaussianNB
+# .5861 <- .5920 RandomForest
+# .6254 <- .6254 LogisticRegression
+# .6252 <- .6251 SVC
+
+These are the changes in sentiment accuracy as a result of adding the features Positive,
+PosAff, Pos-verbs, Negative, Neg-verbs. The major difference was a decrease in accuracy 
+for the RandomForst classifier; a drop in about a half percent in accuracy. I am not sure why this is the case as I would assume that by considering features that have to do with positive/negative wording would help in predicting the tweet's sentiment, but clearly this is not really the case. 
+
+

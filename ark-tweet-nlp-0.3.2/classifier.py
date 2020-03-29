@@ -55,7 +55,7 @@ def select_features(X, y):
 
 
 ## Read the comma-separated tweet data with headers
-X = pandas.read_csv('all_tweets.csv' ,sep=',')
+X = pandas.read_csv('all_tweets_addedfeats.csv' ,sep=',')
 
 ## Shuffle the tweets, which are sorted by sentiment in the original file 
 X = shuffle(X, random_state=0)
@@ -83,6 +83,5 @@ test_classifier(X_train, y_train, X_test, y_test, LogisticRegression())
 # **********************************************************************
 # accuracy: 0.6251
 test_classifier(X_train, y_train, X_test, y_test, SVC())
-
 
 
